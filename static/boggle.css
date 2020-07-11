@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(255, 253, 128);
+}
+table,td,tr {
+    border: 1px solid black;
+}
+
+td {
+    padding: 10px 10px 10px 10px;
+}

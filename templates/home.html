@@ -1,0 +1,34 @@
+{%extends 'base.html' %}
+{%block title%}Boggle{%endblock%}
+
+{%block content%}
+<h1>Let's play BOGGLE!</h1>
+<section id="timer">
+</section>
+<table>
+    {%for row in board%}
+    <tr>
+        {%for element in row%}
+        <td>{{element}}</td>
+        {%endfor%}
+    </tr>
+    {%endfor%}
+</table>
+<section id="info-section">
+    <div id="score">
+        <p id="score-text"></p>
+    </div>
+    <div id="guess-result-message">
+    </div>
+</section>
+<form action="" method="POST" id="guess-form">
+    <lable>Guess a word
+        <input type="text" placeholder="Your guess" name="guess" id="guess-id">
+    </lable>
+    <button>Submit</button>
+</form>
+<section id="all-time-high">
+</section>
+<section id="played-times">
+</section>
+{%endblock%}
